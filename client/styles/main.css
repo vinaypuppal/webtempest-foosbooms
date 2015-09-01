@@ -1,0 +1,14 @@
+a{
+	text-decoration: none;
+	font-weight: bolder;
+	color: #fd6ca3;
+}
+.active a{
+	color: black;
+}
+a:hover{
+	color: #ccc;
+}
+.active a:hover{
+	color: black;
+}

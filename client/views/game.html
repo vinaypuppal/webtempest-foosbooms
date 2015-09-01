@@ -1,0 +1,23 @@
+<template name="game">
+	<li>
+	{{#if completed}}
+		{{teams.[0].name}}
+		<small>{{teams.[0].score}}</small>
+		vs
+		{{teams.[1].name}}
+		<small>{{teams.[1].score}}</small>
+	{{else}}
+		{{teams.[0].name}}
+		[<a href="#" class="one-minus">-</a>
+		{{teams.[0].score}}
+		<a href="#" class="one-plus">+</a>]
+		vs
+		{{teams.[1].name}}
+		[<a href="#" class="two-minus">-</a>
+		{{teams.[1].score}}
+		<a href="#" class="two-plus">+</a>]
+		<a href="#" class="finish">Finish</a>
+		<a href="#" class="delete">Delete</a>
+	{{/if}}	
+	</li>
+</template>

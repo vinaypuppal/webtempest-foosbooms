@@ -1,0 +1,9 @@
+<template name="layout">
+	<h1>Indian Primier League</h1>
+	<ul>
+		<li class="{{isActiveRoute regex='games'}}"><a href="/">Games</a></li>
+		<li class="{{isActiveRoute regex='teams'}}"><a href="/teams">Teams</a></li>
+	</ul>
+	{{>loginButtons}}
+	{{>yield}}
+</template>
