@@ -6,13 +6,15 @@ Router.route('/',{
 	name:'games',
 	waitOn:function(){
 		return [Meteor.subscribe('games'),Meteor.subscribe('teams')];
-	}
+	},
+	fastRender:true
 });
 Router.route('/teams',{
 	name:'teams',
 	waitOn:function(){
 		return Meteor.subscribe('teams');
-	}
+	},
+	fastRender:true
 });
 
 var requireLogin = function(){

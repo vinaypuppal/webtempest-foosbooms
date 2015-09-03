@@ -12,3 +12,4 @@ iron:router
 zimme:iron-router-active
 sacha:spin
 aldeed:collection2
+meteorhacks:fast-render
